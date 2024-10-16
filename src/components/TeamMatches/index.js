@@ -7,8 +7,6 @@ import MatchCard from '../MatchCard'
 
 import './index.css'
 
-const teamMatchesApiUrl = 'https://apis.ccbp.in/ipl/'
-
 class TeamMatches extends Component {
   state = {
     isLoading: true,
@@ -37,6 +35,8 @@ class TeamMatches extends Component {
     const {match} = this.props
     const {params} = match
     const {id} = params
+
+    const teamMatchesApiUrl = 'https://apis.ccbp.in/ipl/'
 
     const response = await fetch(`${teamMatchesApiUrl}${id}`)
     const fetchedData = await response.json()
@@ -78,7 +78,7 @@ class TeamMatches extends Component {
   }
 
   renderLoader = () => (
-    <div testid="loader" className="loader-container">
+    <div className="loader-container">
       <Loader type="Oval" color="#ffffff" height={50} />
     </div>
   )

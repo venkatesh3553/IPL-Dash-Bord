@@ -49,3 +49,26 @@ const LatestMatch = props => {
 }
 
 export default LatestMatch
+
+// const LatestMatch = props => {
+//   const {list} = props
+//   console.log(list)
+//   // const {
+//   //   competingTeam,
+//   //   date,
+//   //   venue,
+//   //   result,
+//   //   competingTeamLogo,
+//   //   firstInnings,
+//   //   secondInnings,
+//   //   manOfTheMatch,
+//   //   umpires,
+//   // } = list
+
+//   return (
+//     <>
+//       <p>{list.date}</p>
+//     </>
+//   )
+// }
+// export default LatestMatch

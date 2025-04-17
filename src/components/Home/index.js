@@ -72,3 +72,42 @@ class Home extends Component {
 }
 
 export default Home
+
+// import {Component} from 'react'
+// import TeamCard from '../TeamCard'
+
+// class Home extends Component {
+//   state = {teamData: [], lodingIs: true}
+
+//   componentDidMount() {
+//     this.getData()
+//   }
+
+//   getData = async () => {
+//     const response = await fetch('https://apis.ccbp.in/ipl')
+//     const data = await response.json()
+//     const updateData = data.teams.map(eachItem => ({
+//       id: eachItem.id,
+//       teamName: eachItem.name,
+//       teamImgUrl: eachItem.team_image_url,
+//     }))
+//     this.setState({teamData: updateData})
+//     // console.log(data)
+//   }
+
+//   render() {
+//     const {teamData} = this.state
+//     return (
+//       <div>
+//         <p>Home</p>
+//         {teamData.map(eachItem => (
+//           <TeamCard teamData={eachItem} key={eachItem.id} />
+//         ))}
+//       </div>
+//     )
+//   }
+// }
+
+// export default Home
+
+// // git remote add origin git@github.com:venkatesh3553/IPL-Dashboard-App.git

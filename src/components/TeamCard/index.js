@@ -16,3 +16,17 @@ const TeamCard = props => {
 }
 
 export default TeamCard
+
+// import {Link} from 'react-router-dom'
+
+// const TeamCard = props => {
+//   const {teamData} = props
+//   const {id, teamName} = teamData
+
+//   return (
+//     <Link to={`/team-matches/${id}`}>
+//       <p>{teamName}</p>
+//     </Link>
+//   )
+// }
+// export default TeamCard
